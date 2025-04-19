@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- List View for Product-->
+    <record id="view_product_list" model="ir.ui.view">
+        <field name="name">product.list</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="price"/>
+                <field name="stock"/>
+                <field name="is_available"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Product -->
+    <record id="view_product_form" model="ir.ui.view">
+        <field name="name">product.form</field>
+        <field name="model">product</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="category"/>
+                        <field name="price"/>
+                        <field name="stock"/>
+                        <field name="is_available" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action for Product -->
+    <record id="action_products" model="ir.actions.act_window">
+        <field name="name">Products</field>
+        <field name="res_model">product</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

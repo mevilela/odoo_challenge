@@ -41,10 +41,32 @@ http://localhost:8069
 
 # Task 2 
 
-Created the view layer
+Create the view layer
 https://www.odoo.com/documentation/17.0/th/developer/reference/user_interface/view_records.html?highlight=view#odoo.addons.base.models.ir_ui_view.View
 
 I have researched about Odoo constrains, depends and exceptions 
- https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=constrains#odoo.api.constrains
- https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=exceptions#module-odoo.exceptions
- https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=depends#odoo.api.depends
+https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=constrains#odoo.api.constrains
+https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=exceptions#module-odoo.exceptions
+https://www.odoo.com/documentation/17.0/pt_BR/developer/reference/backend/orm.html?highlight=depends#odoo.api.depends
+
+# Task 3: 
+Testing on Odoo Research
+https://www.odoo.com/documentation/17.0/th/developer/reference/backend/testing.html?highlight=testing
+ 
+https://www.cybrosys.com/blog/how-to-write-test-case-in-the-odoo-17-erp
+
+https://medium.com/@devanshu.bhatt_42277/a-complete-guide-to-software-testing-in-odoo-with-code-examples-341f1a783607
+
+https://www.youtube.com/watch?v=oUbRHnOZUbo
+
+Configuration changes to enable tests on odoo.conf
+https://www.odoo.com/documentation/17.0/th/developer/reference/backend/testing.html?highlight=transactioncase#running-tests
+
+
+#### Limitations 
+While working on this challenge, I faced some dificulties:
+- I was unable to run the tests inside the container environment, which prevented me from properly validating them. 
+
+- VS Code was unable to correctly recognize Odoo’s libraries, making development and debugging more difficult.
+
+- These issues highlighted the need for deeper research on how to configure a pratical development environment for Odoo, particulary container integration and IDE support. 

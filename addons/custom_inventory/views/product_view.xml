@@ -9,6 +9,7 @@
                 <field name="name"/>
                 <field name="category"/>
                 <field name="price"/>
+                <field name="discounted_price"/>
                 <field name="stock"/>
                 <field name="is_available"/>
             </tree>
@@ -26,6 +27,7 @@
                         <field name="name"/>
                         <field name="category"/>
                         <field name="price"/>
+                        <field name="discounted_price"/>
                         <field name="stock"/>
                         <field name="is_available" readonly="1"/>
                     </group>

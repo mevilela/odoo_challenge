@@ -95,16 +95,16 @@ https://www.youtube.com/watch?v=1sgflzCAx9U
 
 - However, for future improvements, my goal is to hide the custom_discount field by default and only show it when the Apply Discount button is clicked. This would make the UI cleaner and provide better control over the discount application process.
 
-#### Limitations 
+### Limitations 
 While working on this challenge, I faced some dificulties:
-- I was unable to run the tests inside the container environment, which prevented me from properly validating them. 
+- I was unable to run the tests inside the container environment, which prevented me from properly validating them.  (Task 3)
 
 - VS Code was unable to correctly recognize Odoo’s libraries, making development and debugging more difficult.
 
 - These issues highlighted the need for deeper research on how to configure a pratical development environment for Odoo, particulary container integration and IDE support. 
 
 ### Further Improvements
-- To improve this feature and my overall understanding about Odoo development, I plan to explore more Odoo and Python concepts. 
+- To improve this feature and my overall understanding about Odoo development, I plan to explore more Odoo concepts. 
 - One of my goals is to take this Udemy course on Odoo Development (https://www.udemy.com/course/mastering-odoo-9-development-technical-fundamentals/?couponCode=KEEPLEARNING)
 - I also intent to complete the official Odoo "Getting Start"  tutorial available at http://odoo.com (which I started to do during this challenge) and take more advanced Odoo official tutorials
 

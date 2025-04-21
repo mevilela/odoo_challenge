@@ -3,3 +3,5 @@ etc/odoo-server.log
 etc/addons/
 etc/sessions/
 etc/filestore/
+addons/custom_inventory/models/__pycache__/product.cpython-310.pyc
+addons/custom_inventory/__pycache__/__init__.cpython-310.pyc

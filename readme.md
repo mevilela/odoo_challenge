@@ -62,6 +62,21 @@ https://www.youtube.com/watch?v=oUbRHnOZUbo
 Configuration changes to enable tests on odoo.conf
 https://www.odoo.com/documentation/17.0/th/developer/reference/backend/testing.html?highlight=transactioncase#running-tests
 
+# Bonus 1: Add custom discount button
+
+- A new button called "Apply Custom Discount" was added at the view layer
+- Business logic was updated: if a custom discount is applied, it overrides the default 10% low stock discount
+- During my research I found that there is an especific action type button. Howevwer, I wasn't able to successfully implement it. I will need to research futher how to properly use it. 
+- The current implementation prioritizes functionality while maintaining compatibility with existing components.
+
+https://www.odoo.com/documentation/17.0/developer/reference/backend/actions.html
+
+https://www.odoo.com/documentation/17.0/th/developer/reference/user_interface/view_architectures.html?highlight=button#reference-view-architectures-form-button
+
+https://www.cybrosys.com/blog/how-to-add-a-button-inside-action-menu-in-odoo-17
+
+https://www.youtube.com/watch?v=Ny13m-l-wHU
+
 
 #### Limitations 
 While working on this challenge, I faced some dificulties:
@@ -70,3 +85,4 @@ While working on this challenge, I faced some dificulties:
 - VS Code was unable to correctly recognize Odoo’s libraries, making development and debugging more difficult.
 
 - These issues highlighted the need for deeper research on how to configure a pratical development environment for Odoo, particulary container integration and IDE support. 
+

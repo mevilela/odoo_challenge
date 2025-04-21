@@ -19,7 +19,6 @@ class Product(models.Model):
     # #bonus: add action button - custom discount 
     custom_discount = fields.Float(string='Custom Discount (%)')
 
-
     #constraints
     #check if price is a positive value
     @api.constrains('price')
@@ -37,7 +36,7 @@ class Product(models.Model):
     
     #task 3: compute_discount 
     #bonus task: if custom discount then applies custom discount otherwise, low stock business rule
-    @api.depends('stock', 'price')
+    @api.depends('stock', 'price', 'custom_discount')
     def compute_discount(self):
         for record in self:
             if record.custom_discount > 0:
@@ -54,11 +53,23 @@ class Product(models.Model):
                 if record.stock <= 0:
                     raise ValidationError("Stock must be a positive value.")
     
-    #bonus: add action button - custom discount 
+    #Bonus: add action button - custom discount 
     def action_custom_discount(self):
          for record in self:
               if 0 < record.custom_discount < 100:
                    record.discounted_price = record.price - (record.price * record.custom_discount / 100)
               else: 
                    raise ValidationError("Discount percentage must be a number between 0 and 100")
+   
+    #Bonus 2: remove custom discount
+    def action_remove_discount(self):
+         for record in self:
+             record.custom_discount = 0
+             
+  
+         
+         
+             
+                   
+         
 

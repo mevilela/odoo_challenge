@@ -22,20 +22,17 @@
         <field name="model">product</field>
         <field name="arch" type="xml">
             <form>
-                <header>
-                    <button 
-                    type="object" 
-                    name="action_custom_discount"
-                    string="Apply Custom Discount"
-                    class="btn-primary"/>
+                <header>     <!-- Buttons Apply/Remove discount -->
+                    <button type="object" name="action_custom_discount" string="Apply Custom Discount" class="btn-primary" invisible="custom_discount > 0"/>
+                    <button type="object" name="action_remove_discount" string="Remove Custom Discount" class="btn-danger" invisible="custom_discount == 0"/>
                 </header>
                 <sheet>
                     <group>
                         <field name="name"/>
                         <field name="category"/>
                         <field name="price"/>
-                        <field name="custom_discount"/>
-                        <field name="discounted_price"/>
+                        <field name="custom_discount" />
+                        <field name="discounted_price" />
                         <field name="stock"/>
                         <field name="is_available" readonly="1"/>
                     </group>
